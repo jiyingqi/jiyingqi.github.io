@@ -357,3 +357,7 @@ a.svg:after {
     bottom: 0;
     left: 0;
   }
+text {
+    fill: pink;
+    font-size: 24px;
+  }
