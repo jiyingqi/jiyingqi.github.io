@@ -361,6 +361,5 @@ text {
     fill: pink;
     font-size: 24px;
   }
-html, body {
-      height:100%;
-  }
+
+#alyssahom > p { height:100vh; }
