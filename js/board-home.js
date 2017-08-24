@@ -1,9 +1,9 @@
-window.onload = function;
 
-function() {
 
+(function() {
+  var circleA = document.createElement('a');
   circleCont.href = "https://example.com";
-  circleCont.class = "svg";
+  //circleCont.class = "svg";
   document.getElementsByTagName('svg')[0].appendChild(circleCont);
 
   var circlePattern = document.createElement('circle');
@@ -12,16 +12,15 @@ function() {
   circlePattern.r="8%";
   circlePattern.fill="transparent";
   circlePattern.stroke="lightblue";
-  circlePattern.stroke-width="0.5%";
+  circlePattern.stroke.width="0.5%";
   var circleText = document.createElement('text');
   circleText.x ="25%";
   circleText.y="340px";
-  circleText.style.text-anchor="middle";
+  circleText.style.text.anchor="middle";
   circleText.style.fill="lightskyblue";
   circleText.innerHTML="hello!";
 
-  // The variable iDiv is still good... Just append to it.
   circleA.appendChild(circlePattern);
-  circleA.appendChild(circleText)
+  circleA.appendChild(circleText);
 
-}
+});
