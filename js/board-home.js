@@ -1,10 +1,5 @@
-
-
-(function() {
-  var circleA = document.createElement('a');
-  circleCont.href = "https://example.com";
-  //circleCont.class = "svg";
-  document.getElementsByTagName('svg')[0].appendChild(circleCont);
+function getRandomPosition() {
+  document.getElementsByTagName('circle')[0].appendChild(circleCont);
 
   var circlePattern = document.createElement('circle');
   circlePattern.cx = "25%";
@@ -23,4 +18,7 @@
   circleA.appendChild(circlePattern);
   circleA.appendChild(circleText);
 
-});
+  var count = $("#graph a").length;
+  for(i=0; i<count; i++){
+    document.getElementsByTagName("a")[i].innerHTML = "Milk";
+};
