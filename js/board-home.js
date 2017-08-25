@@ -11,4 +11,3 @@ function getRandomPosition() {
       document.getElementsByTagName("circle")[i].setAttribute("cy", yPos+"%");
     }
 }
-window.onload = getRandomPosition();
