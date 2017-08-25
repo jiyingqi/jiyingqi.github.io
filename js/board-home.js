@@ -1,24 +1,12 @@
 function getRandomPosition() {
-  document.getElementsByTagName('circle')[0].appendChild(circleCont);
-
-  var circlePattern = document.createElement('circle');
-  circlePattern.cx = "25%";
-  circlePattern.cy="340px";
-  circlePattern.r="8%";
-  circlePattern.fill="transparent";
-  circlePattern.stroke="lightblue";
-  circlePattern.stroke.width="0.5%";
-  var circleText = document.createElement('text');
-  circleText.x ="25%";
-  circleText.y="340px";
-  circleText.style.text.anchor="middle";
-  circleText.style.fill="lightskyblue";
-  circleText.innerHTML="hello!";
-
-  circleA.appendChild(circlePattern);
-  circleA.appendChild(circleText);
-
-  var count = $("#graph a").length;
-  for(i=0; i<count; i++){
-    document.getElementsByTagName("a")[i].innerHTML = "Milk";
-};
+	var count = $("#selected a").length;
+	for(i=0; i<count; i++){
+      var xPos = Math.random() * (92 - 8) + 8;
+      var yPos = Math.random() * (92 - 8) + 8;
+      document.getElementsByTagName("text")[i].setAttribute("x", xPos+"%");
+      document.getElementsByTagName("text")[i].setAttribute("y", yPos+"%");
+      document.getElementsByTagName("circle")[i].setAttribute("cx", xPos+"%");
+      document.getElementsByTagName("circle")[i].setAttribute("cy", yPos+"%");
+    }
+}
+window.onload = getRandomPosition();
