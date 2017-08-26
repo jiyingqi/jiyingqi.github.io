@@ -1,5 +1,5 @@
 function getRandomPosition() {
-	var count = $("#selected a").length;
+	var count = $("#graph a").length;
 	for(i=0; i<count; i++){
       var xPos = Math.random() * (92 - 8) + 8;
       var yPos = Math.random() * (92 - 8) + 8;
