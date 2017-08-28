@@ -6,7 +6,9 @@ for(i=1; i<=count; i++){
     elem.setAttribute("src", "/alyssa/pic/picture/" + i + ".jpg");
     elem.setAttribute("x", xPos+"%");
     elem.setAttribute("y", yPos+"%");
-    elem.setAttribute("max-width", "10%");
-    elem.setAttribute("height", "auto");
+    elem.style.width = "10%";
+    elem.style.height = "auto";
+    //elem.setAttribute("max-width", "10%");
+    //elem.setAttribute("height", "auto");
     document.getElementById("pichome").appendChild(elem);
   }
